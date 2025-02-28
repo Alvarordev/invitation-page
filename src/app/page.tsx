@@ -45,12 +45,12 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 text-black bg-white">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div>
+        <div className={`${accepted ? '' : 'hidden'}`}>
           <div className="w-full flex justify-center mb-10">
           <p className="text-3xl">ESOOOOO!!</p>
 
           </div>
-          <img src="/catdancing.gif" alt="cat" className={`${accepted ? '' : 'hidden'} h-82 w-full`} />
+          <img src="/catdancing.gif" alt="cat" className={`h-82 w-full`} />
         </div>
 
         <div className={`${accepted ? "hidden" : ''} `}>
